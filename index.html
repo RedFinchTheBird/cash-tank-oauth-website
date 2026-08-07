@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Cash Tank — Personal Budgeting App | Privacy &amp; Data Use</title>
+  <meta name="description" content="Cash Tank is a personal budgeting application. Learn how it connects your financial accounts through Plaid and how your data is used, stored, and deleted.">
+  <style>
+    :root { --ink:#1a2330; --muted:#5b6675; --line:#e6e9ee; --accent:#1f7a5a; --bg:#ffffff; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink);
+      font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+    header { background:#0f1b2d; color:#fff; padding:40px 20px; }
+    .wrap { max-width: 820px; margin:0 auto; padding:0 20px; }
+    header .wrap { padding:0; }
+    h1 { margin:0 0 6px; font-size:2rem; }
+    header p { margin:0; color:#c7d0dc; font-size:1.05rem; }
+    main { padding:36px 0 60px; }
+    h2 { margin:34px 0 10px; font-size:1.25rem; border-bottom:1px solid var(--line); padding-bottom:6px; }
+    h3 { margin:20px 0 6px; font-size:1.02rem; }
+    p, li { color:var(--ink); }
+    .muted { color:var(--muted); }
+    a { color:var(--accent); }
+    ul { padding-left:22px; }
+    code { background:#f2f4f7; padding:1px 5px; border-radius:4px; font-size:0.92em; }
+    .card { border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:14px 0; background:#fbfcfd; }
+    footer { border-top:1px solid var(--line); color:var(--muted); font-size:0.9rem; padding:24px 0 60px; }
+    .nav { margin-top:14px; font-size:0.95rem; }
+    .nav a { margin-right:16px; white-space:nowrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Cash Tank</h1>
+      <p>A personal budgeting application for tracking spending and managing budgets.</p>
+      <div class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#data">Data We Access</a>
+        <a href="#security">Security</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="overview">
+      <h2>About Cash Tank</h2>
+      <p>Cash Tank is a personal budgeting application that runs on the user's own Windows
+      computer. It helps individuals track spending, categorize transactions, and manage budgets.
+      Users may optionally connect their financial accounts so the application can import
+      transactions and balances automatically. Account connections are provided securely through
+      <a href="https://plaid.com" rel="noopener">Plaid</a>.</p>
+    </section>
+
+    <section id="data">
+      <h2>What Data We Access and Why</h2>
+      <div class="card">
+        <p>With the user's explicit permission, Cash Tank uses Plaid to connect the user's bank,
+        credit card, and Venmo accounts to import <strong>account balances</strong> and
+        <strong>transaction history</strong>. This data is used <strong>solely to provide budgeting
+        and cash‑flow features to the user within the application</strong>. We do not sell, rent, or
+        share the data for advertising. Transaction data is stored on the user's own device.</p>
+      </div>
+      <ul>
+        <li>Bank credentials are entered directly with <strong>Plaid</strong>; Cash Tank never sees
+        or stores a user's online‑banking username or password.</li>
+        <li>Cash Tank requests only the <strong>transactions</strong> data needed for budgeting. It
+        does not use money‑movement, identity, or credit‑underwriting products.</li>
+      </ul>
+    </section>
+
+    <section id="security">
+      <h2>How We Protect Your Data</h2>
+      <ul>
+        <li><strong>Encryption in transit:</strong> all communication uses HTTPS/TLS 1.2 or higher.</li>
+        <li><strong>Encryption at rest:</strong> Plaid access keys are stored in Microsoft Azure Key
+        Vault; connection metadata is stored in encrypted Azure storage.</li>
+        <li><strong>No server‑side transaction storage:</strong> transactions pass through to the
+        user's device and are not retained on our servers.</li>
+        <li><strong>Least‑privilege access</strong> and <strong>multi‑factor authentication</strong>
+        protect administrative access to our systems.</li>
+        <li>The application's license credential is stored <strong>encrypted</strong> on the user's
+        device.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="privacy">
+      <h2>Cash Tank Privacy Policy</h2>
+      <p class="muted">Effective date: August 6, 2026</p>
+
+      <h3>1. Who we are</h3>
+      <p>Cash Tank ("the App") is a personal budgeting application provided by an independent
+      individual developer ("we," "us," "our"). This policy explains how we collect, use, share, and
+      protect information when you use the App and choose to connect a financial account.</p>
+
+      <h3>2. Information we collect</h3>
+      <p><strong>Information you provide:</strong> a license key and related activation details.</p>
+      <p><strong>Collected automatically for licensing:</strong> a device identifier generated on
+      your computer and activation status, used to validate your license and prevent misuse.</p>
+      <p><strong>Financial information via Plaid:</strong> if you link an account, Plaid securely
+      collects your login credentials on Plaid's systems and provides us with account information
+      (name, type, mask, balance) and transaction history. <strong>We never see or store your bank
+      username or password.</strong></p>
+
+      <h3>3. How we use information</h3>
+      <p>To activate and validate your license, connect your accounts, import transactions and
+      balances, provide and improve budgeting features, and respond to your requests. We do not use
+      your financial data for advertising, and we do not sell your personal information.</p>
+
+      <h3>4. Where your data is stored</h3>
+      <p>Your imported transactions, account details, and budgets are stored <strong>locally on your
+      own computer</strong>. To keep connections working, we store an encrypted Plaid access key
+      (in Azure Key Vault) and limited connection metadata (in encrypted Azure storage). We do
+      <strong>not</strong> store your transaction history on our servers.</p>
+
+      <h3>5. How we share information</h3>
+      <ul>
+        <li><strong>Plaid</strong> — to connect your accounts and retrieve transactions. See Plaid's
+        <a href="https://plaid.com/legal/#end-user-privacy-policy" rel="noopener">End User Privacy Policy</a>.</li>
+        <li><strong>Microsoft Azure</strong> — our cloud provider, which stores encrypted credentials
+        and metadata on our behalf.</li>
+        <li><strong>Legal reasons</strong> — if required by law or to protect rights, safety, and security.</li>
+      </ul>
+      <p>We do not sell your personal information or share it with advertisers.</p>
+
+      <h3>6. Data retention and deletion</h3>
+      <p>We retain your Plaid access key and connection metadata only while your account remains
+      linked. When you <strong>unlink an institution</strong> in the App, we automatically disconnect
+      it from Plaid, delete the stored access key, and delete the connection metadata. You can remove
+      locally stored data by deleting it in the App or uninstalling the App. To request deletion of
+      any personal information we hold, contact us (Section 10); we respond within 30 days as required
+      by applicable law.</p>
+
+      <h3>7. Your choices and rights</h3>
+      <p>You control whether to connect any account and can disconnect at any time in the App.
+      Depending on where you live (for example, California and certain other U.S. states), you may
+      have rights to access, correct, or delete your personal information. To make a request, contact
+      us at the email below.</p>
+
+      <h3>8. Children's privacy</h3>
+      <p>Cash Tank is not directed to children under 13, and we do not knowingly collect personal
+      information from children under 13.</p>
+
+      <h3>9. Changes to this policy</h3>
+      <p>We may update this policy from time to time. Material changes will be reflected by updating
+      the effective date above and posting the revised policy on this page.</p>
+
+      <h3 id="contact">10. Contact us</h3>
+      <p>Questions or privacy requests: <a href="mailto:jm.longo@comcast.net">jm.longo@comcast.net</a></p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>&copy; 2026 Cash Tank. This site describes the Cash Tank personal budgeting application and
+    its privacy practices. Cash Tank uses Plaid to connect financial accounts; use of Plaid is
+    subject to Plaid's <a href="https://plaid.com/legal/" rel="noopener">policies</a>.</p>
+  </footer>
+</body>
+</html>
